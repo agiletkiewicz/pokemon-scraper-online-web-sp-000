@@ -1,3 +1,5 @@
+require 'pry'
+
 class Pokemon
   
   attr_accessor :name, :type, :db 
@@ -32,6 +34,7 @@ class Pokemon
     row = db.execute(sql, id)
     new_object = self.new(:id => row[0], :name => row[1], :type => row[2], :db => db)
     new_object
+    binding.pry
   end
   
   
