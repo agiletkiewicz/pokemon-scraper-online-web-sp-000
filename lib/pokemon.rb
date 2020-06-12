@@ -23,4 +23,6 @@ class Pokemon
   end
   
   
+  
+  
 end
