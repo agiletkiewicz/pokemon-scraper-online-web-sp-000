@@ -21,7 +21,8 @@ class Pokemon
 
   end
   
-  
+  def self.find 
+  end
   
   
 end
