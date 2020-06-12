@@ -30,7 +30,7 @@ class Pokemon
     SQL
     
     row = db.execute(sql, id)
-    self.new(:id => row[0], :name => row[1], :type => row[2])
+    self.new(:id => row[0], :name => row[1], :type => row[2], :db => db)
     
   end
   
